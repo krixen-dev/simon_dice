@@ -1,0 +1,30 @@
+.activo{
+  opacity: 1;
+}
+.desactivo{
+  opacity: 0.5;
+}
+.oculto{
+  display: none;
+}
+#rojo{
+  background-color: rgb(211, 43, 43);
+  font-size: 5em;
+}
+#verde{
+  background-color: rgb(39, 141, 39);
+  font-size: 5em;
+}
+#amarillo{
+  background-color: rgb(198, 216, 38);
+  font-size: 5em;
+}
+#celeste{
+  background-color: rgb(11, 95, 134);
+  font-size: 5em;
+}
+
+button{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.699);
+}

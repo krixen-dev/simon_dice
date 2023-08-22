@@ -1,0 +1,22 @@
+{
+  "name": "simon_dice",
+  "version": "1.0.0",
+  "description": "juego \"simon dice\" que involucra conocimientos aprendidos en r argentina programa",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krixen-dev/simon_dice.git"
+  },
+  "author": "krixen.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krixen-dev/simon_dice/issues"
+  },
+  "homepage": "https://github.com/krixen-dev/simon_dice#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
