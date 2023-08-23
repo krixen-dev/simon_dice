@@ -1,8 +1,10 @@
 .activo{
   opacity: 1;
+  transition: 500ms;
 }
 .desactivo{
   opacity: 0.5;
+  transition: 500ms;
 }
 .oculto{
   display: none;
