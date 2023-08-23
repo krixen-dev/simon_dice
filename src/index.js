@@ -1,8 +1,8 @@
 const $cartelAvisoTurno = document.getElementById("aviso-turno");
 const $btnEmpezarJuego = document.getElementById("btn-empezar-juego");
 const $cuadros = document.querySelectorAll("[name=cuadro]");
+const $cartelAvisoRonda = document.getElementById("aviso-ronda");
 
-let ronda = 0;
 
 $btnEmpezarJuego.onclick = empezarJuego;
 
@@ -19,6 +19,7 @@ function gestionarRonda() {
 
 }
 function turnoSimon() {
+  simon.incrementarRonda();
   simon.avisarTurno();
   simon.bloquearInputsUsuario();
   simon.agregarCuadroASecuencia(simon.generarCuadroAlAzar());
@@ -57,6 +58,11 @@ const simon = {
       $cuadro.onclick = function () {
       }
     });
+  },
+  ronda : 0,
+  incrementarRonda : function () {
+    this.ronda++;
+    $cartelAvisoRonda.textContent = this.ronda;
   }
 }
 
