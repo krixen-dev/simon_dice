@@ -85,15 +85,14 @@ const usuario = {
     this.secuencia.push($cuadro);
     iluminarCuadro($cuadro);
     const $cuadroActualSimon = this.secuencia.length -1;
+    if ($cuadro.id !== simon.secuencia[$cuadroActualSimon].id) {
+      return alert("cuadro equivocado, pierde");
+    }
     if (this.secuencia.length === simon.secuencia.length) {
       this.secuencia = [];
       setTimeout(() => {
         gestionarRonda();
       }, 1000);
-    }
-    if ($cuadro.id !== simon.secuencia[$cuadroActualSimon].id) {
-      alert("cuadro equivocado, pierde");
-      return;
     }
   }
 }
