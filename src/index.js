@@ -86,6 +86,11 @@ const usuario = {
     iluminarCuadro($cuadro);
     const $cuadroActualSimon = this.secuencia.length -1;
     if ($cuadro.id !== simon.secuencia[$cuadroActualSimon].id) {
+      ocultarElemento($cartelAvisoTurno);
+      mostrarElementoOculto($btnEmpezarJuego);
+      simon.ronda = 0;
+      simon.secuencia = [];
+      usuario.secuencia = [];
       return alert("cuadro equivocado, pierde");
     }
     if (this.secuencia.length === simon.secuencia.length) {
@@ -96,9 +101,6 @@ const usuario = {
     }
   }
 }
-
-
-
 
 function iluminarCuadro($cuadro) {
   $cuadro.classList.remove("desactivo");
